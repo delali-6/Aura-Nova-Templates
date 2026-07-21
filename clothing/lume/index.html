@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lume Atelier | Modern Luxury Wardrobe</title>
+  <meta name="description" content="Lume Atelier luxury clothing store with elegant design, curated collections, and refined shopping experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home">Lume Atelier</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#new">New In</a>
+      <a href="#collections">Collections</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#visit">Visit</a>
+      <a href="product-grid.html">Product Grid</a>
+      <a href="shop-detail.html">Shop Detail</a>
+      <a href="booking-form.html">Booking Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?auto=format&fit=crop&w=1800&q=80" alt="Elegant fashion model in city setting" />
+      <div class="overlay"></div>
+      <div class="hero-content reveal">
+        <p class="label">Spring Capsule 2026</p>
+        <h1>Where tailoring meets poetry.</h1>
+        <p>
+          Silhouettes sculpted for movement, in textures that glow from morning meetings to midnight dinners.
+        </p>
+        <a class="btn gold" href="#collections">Shop The Edit</a>
+      </div>
+    </section>
+
+    <section class="new reveal" id="new">
+      <div class="section-head">
+        <p class="label dark">New Arrivals</p>
+        <h2>Refined essentials, freshly released</h2>
+      </div>
+      <div class="ticker" aria-label="Highlights">
+        <div class="ticker-track">
+          <span>Hand-finished linen blazers</span>
+          <span>Italian silk slip dresses</span>
+          <span>Structured cream trousers</span>
+          <span>Limited pearl-button jackets</span>
+          <span>Hand-finished linen blazers</span>
+          <span>Italian silk slip dresses</span>
+          <span>Structured cream trousers</span>
+          <span>Limited pearl-button jackets</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections reveal" id="collections">
+      <div class="section-head split">
+        <div>
+          <p class="label dark">Collections</p>
+          <h2>Curated by mood</h2>
+        </div>
+        <div class="filter-group" aria-label="Filter products">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="women">Women</button>
+          <button class="filter" data-filter="men">Men</button>
+          <button class="filter" data-filter="accessories">Accessories</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product reveal" data-kind="women">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Woman in elegant cream coat" />
+          <div class="product-body">
+            <h3>Ivory Drape Coat</h3>
+            <p>Soft wool blend with minimalist belt detail.</p>
+            <strong>£189</strong>
+          </div>
+        </article>
+
+        <article class="product reveal" data-kind="men">
+          <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=80" alt="Man wearing tailored suit" />
+          <div class="product-body">
+            <h3>Midnight Tailored Set</h3>
+            <p>Sharp shoulder line with fluid straight-leg finish.</p>
+            <strong>£240</strong>
+          </div>
+        </article>
+
+        <article class="product reveal" data-kind="accessories">
+          <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=80" alt="Luxury fashion accessories" />
+          <div class="product-body">
+            <h3>Goldline Accent Pack</h3>
+            <p>Leather clutch, cuff links, and pearl-gold pins.</p>
+            <strong>£128</strong>
+          </div>
+        </article>
+
+        <article class="product reveal" data-kind="women">
+          <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80" alt="Woman in stylish black dress" />
+          <div class="product-body">
+            <h3>Noir Evening Dress</h3>
+            <p>Sculpted waist and subtle shimmer texture.</p>
+            <strong>£172</strong>
+          </div>
+        </article>
+
+        <article class="product reveal" data-kind="men">
+          <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=900&q=80" alt="Men fashion street style" />
+          <div class="product-body">
+            <h3>Stone Chore Jacket</h3>
+            <p>Urban utility cut with brushed cotton comfort.</p>
+            <strong>£134</strong>
+          </div>
+        </article>
+
+        <article class="product reveal" data-kind="accessories">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Luxury wrist watch and jewelry" />
+          <div class="product-body">
+            <h3>Chrono Luxe Watch</h3>
+            <p>Polished steel with champagne-gold detailing.</p>
+            <strong>£310</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="lookbook reveal" id="lookbook">
+      <div class="lookbook-text">
+        <p class="label dark">Lookbook Film</p>
+        <h2>Quiet glamour in motion</h2>
+        <p>
+          Our latest campaign blends city geometry with soft draping fabrics, creating silhouettes that look effortless from every angle.
+        </p>
+        <ul>
+          <li>Limited drops every Friday</li>
+          <li>Premium fabric sourcing from Milan</li>
+          <li>Personal styling appointments available</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80" alt="Luxury fashion photoshoot" />
+    </section>
+
+    <section class="visit reveal" id="visit">
+      <div class="visit-card">
+        <h2>Visit Lume Atelier</h2>
+        <p>18 Marigold Avenue, Fashion District</p>
+        <p>Mon-Sat: 10:00 AM - 9:00 PM</p>
+        <p>Sunday: 11:00 AM - 7:00 PM</p>
+        <a class="btn dark" href="#home">Back To Top</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="Elegant clothing store interior" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Lume Atelier • Crafted for timeless wardrobes</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

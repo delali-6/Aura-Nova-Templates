@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mira Aurora Atelier | Classic Vibrant Fashion House</title>
+  <meta name="description" content="Mira Aurora Atelier is a classic vibrant clothing store with aurora-inspired style, smooth navigation, and animated shopping sections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="floating-head">
+    <a class="logo" href="#landing">Mira Aurora Atelier</a>
+    <p>Classic tailoring • vibrant aura</p>
+    <div class="head-links">
+      <a href="product-grid.html">Grid</a>
+      <a href="shop-detail.html">Detail</a>
+      <a href="booking-form.html">Booking</a>
+    </div>
+  </header>
+  <nav class="dock-nav" aria-label="Main sections">
+    <a href="#landing" class="active" data-target="landing">Landing</a>
+    <a href="#signature" data-target="signature">Collections</a>
+    <a href="#ritual" data-target="ritual">Runway</a>
+    <a href="#reserve" data-target="reserve">Reserve</a>
+  </nav>
+
+  <main>
+    <section class="snap-section landing" id="landing">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=80" alt="Fashion model in bold lighting" />
+      <div class="glow"></div>
+      <div class="content rise">
+        <p class="tag">Aurora Capsule 2026</p>
+        <h1>Classic tailoring with electric color.</h1>
+        <p>
+          Discover coats, dresses, and structured essentials designed with old-world craftsmanship
+          and a vibrant aurora palette.
+        </p>
+        <a class="cta" href="#signature">Explore Collections</a>
+      </div>
+    </section>
+
+    <section class="snap-section signature" id="signature">
+      <div class="content wide">
+        <div class="intro rise">
+          <p class="tag">Signature Collection</p>
+          <h2>Classic silhouettes, vibrant finish</h2>
+          <p>Curated wardrobe pieces in vivid aurora tones and timeless cuts.</p>
+        </div>
+
+        <div class="drink-grid">
+          <article class="drink rise">
+            <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?auto=format&fit=crop&w=900&q=80" alt="Tailored long coat in city" />
+            <div class="drink-body">
+              <h3>Velvet Aurora Coat</h3>
+              <p>Double-breasted wool coat with luminous violet lining.</p>
+              <strong>£224</strong>
+            </div>
+          </article>
+
+          <article class="drink rise">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Woman wearing stylish outfit" />
+            <div class="drink-body">
+              <h3>Neon Bloom Set</h3>
+              <p>Coordinated jacket and drape skirt with satin texture.</p>
+              <strong>£198</strong>
+            </div>
+          </article>
+
+          <article class="drink rise">
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Luxury accessories with watch" />
+            <div class="drink-body">
+              <h3>Prism Luxe Accessories</h3>
+              <p>Statement watch and accent jewelry with gold detailing.</p>
+              <strong>£146</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="snap-section ritual" id="ritual">
+      <div class="content split">
+        <img class="rise" src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80" alt="Runway style photoshoot" />
+        <div class="rise">
+          <p class="tag">Runway Ritual</p>
+          <h2>From sketchbook to spotlight</h2>
+          <ul>
+            <li>Weekly styling salons every Thursday at 8:00 PM</li>
+            <li>Fabric and fit ateliers each weekend</li>
+            <li>Seasonal capsule drops with live previews</li>
+          </ul>
+          <p>
+            Mira blends classic garment construction with bold contemporary color, creating looks that feel both timeless and alive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="snap-section reserve" id="reserve">
+      <div class="content reserve-card rise">
+        <p class="tag">Reserve</p>
+        <h2>Book your private fitting</h2>
+        <p>77 Polaris Walk, Central Quarter</p>
+        <p>Daily: 10:00 AM - 10:00 PM</p>
+        <p>Styling sessions from £65</p>
+        <a class="cta" href="#landing">Back To Top</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

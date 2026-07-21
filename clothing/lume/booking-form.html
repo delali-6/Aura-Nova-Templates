@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lume Atelier | Booking Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="index.html">Lume Atelier</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="index.html#visit">Visit</a>
+      <a href="product-grid.html">Product Grid</a>
+      <a href="shop-detail.html">Shop Detail</a>
+      <a href="booking-form.html">Booking Form</a>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="mini-hero reveal">
+      <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1800&q=80" alt="Stylist preparing clothing rack" />
+      <p class="label">Private Styling</p>
+      <h1>Booking Form</h1>
+      <p>Reserve a 45-minute one-to-one styling appointment with our atelier team.</p>
+    </section>
+
+    <section class="booking-form reveal" aria-label="Styling booking form">
+      <div class="field-grid">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@email.com" />
+        </label>
+        <label>
+          Preferred Date
+          <input type="date" name="date" />
+        </label>
+        <label>
+          Preferred Time
+          <select name="time">
+            <option>10:00 AM</option>
+            <option>12:00 PM</option>
+            <option>2:00 PM</option>
+            <option>4:00 PM</option>
+            <option>6:00 PM</option>
+          </select>
+        </label>
+      </div>
+      <label class="stack-field">
+        Notes
+        <textarea name="notes" placeholder="Tell us your preferred style, size, and occasion."></textarea>
+      </label>
+      <button class="btn gold" type="button">Request Appointment</button>
+    </section>
+  </main>
+
+  <footer><p>Lume Atelier • Crafted for timeless wardrobes</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

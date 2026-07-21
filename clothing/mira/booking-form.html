@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mira Aurora Atelier | Booking Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="floating-head">
+    <a class="logo" href="index.html">Mira Aurora Atelier</a>
+    <p>Classic tailoring • vibrant aura</p>
+    <div class="head-links">
+      <a href="product-grid.html">Grid</a>
+      <a href="shop-detail.html">Detail</a>
+      <a href="booking-form.html">Booking</a>
+    </div>
+  </header>
+  <nav class="dock-nav" aria-label="Main pages">
+    <a href="index.html">Home</a>
+    <a href="product-grid.html">Grid</a>
+    <a href="shop-detail.html">Detail</a>
+    <a href="booking-form.html" class="active">Booking</a>
+  </nav>
+
+  <main class="subpage-main">
+    <section class="mini-hero rise">
+      <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1800&q=80" alt="Fashion stylist preparing wardrobe" />
+      <p class="tag">Private Styling</p>
+      <h1>Booking Form</h1>
+      <p>Reserve your one-to-one fitting and styling consultation.</p>
+    </section>
+
+    <section class="booking-form rise" aria-label="Fitting booking form">
+      <div class="field-grid">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@email.com" />
+        </label>
+        <label>
+          Preferred Date
+          <input type="date" name="date" />
+        </label>
+        <label>
+          Preferred Time
+          <select name="time">
+            <option>10:00 AM</option>
+            <option>12:00 PM</option>
+            <option>2:00 PM</option>
+            <option>4:00 PM</option>
+            <option>6:00 PM</option>
+          </select>
+        </label>
+      </div>
+      <label class="stack-field">
+        Notes
+        <textarea name="notes" placeholder="Tell us your preferred styles, sizes, and event details."></textarea>
+      </label>
+      <button class="cta" type="button">Request Fitting</button>
+      <p class="subnote">Private fitting sessions start from £65.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
