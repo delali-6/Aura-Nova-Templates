@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roast & Bloom | Night Garden Coffee</title>
+  <meta name="description" content="Roast & Bloom coffee house with floral dusk aesthetic, side-rail navigation, and immersive section storytelling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <aside class="rail-nav" aria-label="Section navigation">
+    <div class="brand">
+      <p>Roast & Bloom</p>
+      <small>Night Garden Coffee</small>
+    </div>
+    <nav>
+      <a href="#intro" data-target="intro" class="active"><span>01</span>Intro</a>
+      <a href="#flights" data-target="flights"><span>02</span>Tasting Flights</a>
+      <a href="#atelier" data-target="atelier"><span>03</span>Atelier</a>
+      <a href="#reserve" data-target="reserve"><span>04</span>Reserve</a>
+    </nav>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill"></div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="panel intro" id="intro">
+      <img
+        src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1800&q=80"
+        alt="Coffee and flowers in moody evening light"
+      />
+      <div class="veil"></div>
+      <div class="content slide-up">
+        <p class="kicker">After Sunset Rituals</p>
+        <h1>Coffee, composed like a bouquet.</h1>
+        <p>
+          Roast & Bloom pairs single-origin coffee with floral notes, tea botanicals,
+          and candle-lit ambience for slow, sensory evenings.
+        </p>
+        <a href="#flights" class="pill">Explore Flights</a>
+      </div>
+    </section>
+
+    <section class="panel flights" id="flights">
+      <div class="content split">
+        <div class="slide-up">
+          <p class="kicker">Tasting Flights</p>
+          <h2>Choose your mood</h2>
+          <p>Each flight includes 3 mini pours, pairing notes, and a warm madeleine.</p>
+          <div class="chip-row" role="tablist" aria-label="Flight filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="floral">Floral</button>
+            <button class="chip" data-filter="bold">Bold</button>
+            <button class="chip" data-filter="dessert">Dessert</button>
+          </div>
+        </div>
+        <div class="flight-grid" id="flightGrid">
+          <article class="flight-card slide-up" data-kind="floral">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" alt="Lavender latte with milk foam" />
+            <h3>Lavender Mist</h3>
+            <p>Yirgacheffe, lavender syrup, bergamot zest.</p>
+          </article>
+          <article class="flight-card slide-up" data-kind="bold">
+            <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=800&q=80" alt="Dark espresso in glass cup" />
+            <h3>Midnight Ember</h3>
+            <p>Sumatra roast, cacao bitters, clove smoke.</p>
+          </article>
+          <article class="flight-card slide-up" data-kind="dessert">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Creamy coffee with pastry" />
+            <h3>Velvet Orchard</h3>
+            <p>Brazil roast, vanilla cream, poached pear.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel atelier" id="atelier">
+      <div class="content split alt">
+        <img class="slide-up" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80" alt="Coffee bar with warm decorative lights" />
+        <div class="slide-up">
+          <p class="kicker">Our Atelier</p>
+          <h2>A stage for craft</h2>
+          <p>
+            Watch slow pours at the marble counter, then wander into our bloom wall where dried florals
+            and roast aromas are blended live each evening.
+          </p>
+          <ul>
+            <li>Live hand-pour sessions at 7:00 PM daily</li>
+            <li>Rotating floral pairings curated weekly</li>
+            <li>Ambient vinyl set every Friday night</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reserve" id="reserve">
+      <div class="content reserve-box slide-up">
+        <p class="kicker">Reserve A Table</p>
+        <h2>Bring your evening to bloom</h2>
+        <p>18 Crescent Lane, Arts District</p>
+        <p>Mon-Thu: 4:00 PM - 11:00 PM</p>
+        <p>Fri-Sun: 3:00 PM - 12:00 AM</p>
+        <a class="pill" href="#intro">Back To Intro</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

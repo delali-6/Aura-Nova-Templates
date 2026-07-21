@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean & Co. | Slow Roasted, Warmly Served</title>
+  <meta name="description" content="Bean & Co. coffee shop website with warm tones, handcrafted drinks, and cozy atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="logo-wrap">
+      <span class="bean-dot" aria-hidden="true"></span>
+      <span class="logo-text">Bean & Co.</span>
+    </div>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80"
+        alt="Freshly brewed coffee on wooden table"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Neighborhood Coffee House</p>
+        <h1>Where every cup feels like coming home.</h1>
+        <p class="hero-copy">
+          Handpicked beans, slow roasts, and warm light from morning to moonrise.
+          Settle in, sip slowly, and stay awhile.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Browse Drinks</a>
+          <a class="btn btn-ghost" href="#visit">Find Us</a>
+        </div>
+      </div>
+      <div class="steam steam-1" aria-hidden="true"></div>
+      <div class="steam steam-2" aria-hidden="true"></div>
+      <div class="steam steam-3" aria-hidden="true"></div>
+    </section>
+
+    <section class="highlights reveal" id="menu">
+      <div class="section-head">
+        <p class="eyebrow">Featured This Week</p>
+        <h2>Comfort in Three Signatures</h2>
+      </div>
+      <div class="card-grid">
+        <article class="drink-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Latte art in ceramic cup" />
+          <div class="card-body">
+            <h3>Honey Hearth Latte</h3>
+            <p>Espresso, steamed oat milk, cinnamon, and orange blossom honey.</p>
+            <span>£5.80</span>
+          </div>
+        </article>
+        <article class="drink-card">
+          <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=900&q=80" alt="Iced coffee with caramel drizzle" />
+          <div class="card-body">
+            <h3>Sunset Caramel Cold Brew</h3>
+            <p>18-hour cold brew, brown sugar foam, and a caramel lace finish.</p>
+            <span>£6.20</span>
+          </div>
+        </article>
+        <article class="drink-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Mocha coffee topped with cocoa" />
+          <div class="card-body">
+            <h3>Cocoa Ember Mocha</h3>
+            <p>Dark chocolate, house espresso, and velvety milk with cocoa dust.</p>
+            <span>£6.00</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story reveal" id="story">
+      <div class="story-text">
+        <p class="eyebrow">Bean & Co. Since 2014</p>
+        <h2>Built around people, not rush hour.</h2>
+        <p>
+          We started with one roaster, six stools, and a belief that coffee should slow the day down.
+          Today, we still roast in micro-batches and greet regulars by name.
+        </p>
+        <ul>
+          <li>Locally roasted every Tuesday and Friday</li>
+          <li>Seasonal pastries from neighborhood bakers</li>
+          <li>Zero single-use plastic lids in-store</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80" alt="Barista preparing coffee beans" />
+    </section>
+
+    <section class="visit reveal" id="visit">
+      <div class="visit-panel">
+        <h2>Visit Bean & Co.</h2>
+        <p>42 Maple Street, Old Town</p>
+        <p>Mon-Fri: 6:30 AM - 8:00 PM</p>
+        <p>Sat-Sun: 7:00 AM - 9:00 PM</p>
+        <a class="btn btn-primary" href="#top">Back To Top</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Cozy coffee shop interior" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Bean & Co. • Slow Roasted, Warmly Served</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
