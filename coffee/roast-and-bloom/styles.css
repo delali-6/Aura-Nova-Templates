@@ -53,6 +53,7 @@ main {
   padding: 1.35rem 1rem;
   border-right: 1px solid var(--line);
   background: rgba(8, 13, 20, 0.86);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   z-index: 5;
   display: grid;
