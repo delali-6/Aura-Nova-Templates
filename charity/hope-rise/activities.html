@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope Rise | Activities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Hope Rise</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="activities.html">Activities</a>
+      <a href="visitors.html">For Visitors</a>
+      <a href="funders.html">For Funders</a>
+    </nav>
+    <a class="cta" href="funders.html">Support Our Work</a>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80" alt="Community gathering and charity activities" />
+      <div class="page-copy">
+        <p class="eyebrow">Activities Calendar</p>
+        <h1>Current and upcoming community activity</h1>
+        <p>Visitors and funders can see what is happening now, what is coming next, and where support is needed.</p>
+      </div>
+    </section>
+
+    <section class="section-shell reveal">
+      <div class="timeline-toolbar" aria-label="Activity filters">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="current">Current</button>
+        <button class="tab-btn" data-filter="upcoming">Upcoming</button>
+      </div>
+
+      <div class="activity-grid">
+        <article class="activity-card" data-kind="current">
+          <header>
+            <div>
+              <span class="badge">Current</span>
+              <h3>Food Parcel Support</h3>
+            </div>
+            <strong>Every Tue & Thu</strong>
+          </header>
+          <p>Families can collect essential food parcels, hygiene kits, and warm drinks from our community hall.</p>
+          <ul>
+            <li>Drop-in collections</li>
+            <li>Volunteer packing help</li>
+            <li>Partner referrals</li>
+          </ul>
+        </article>
+
+        <article class="activity-card" data-kind="current">
+          <header>
+            <div>
+              <span class="badge">Current</span>
+              <h3>Youth Learning Circle</h3>
+            </div>
+            <strong>Wednesdays</strong>
+          </header>
+          <p>Homework support, reading clubs, and creative sessions for children and teens in the neighbourhood.</p>
+          <ul>
+            <li>School-age mentoring</li>
+            <li>Creative arts station</li>
+            <li>Safe after-school space</li>
+          </ul>
+        </article>
+
+        <article class="activity-card" data-kind="current">
+          <header>
+            <div>
+              <span class="badge">Current</span>
+              <h3>Wellbeing Drop-In</h3>
+            </div>
+            <strong>Fridays</strong>
+          </header>
+          <p>Private conversations, signposting to local services, and practical support from trained coordinators.</p>
+          <ul>
+            <li>Mental wellbeing guidance</li>
+            <li>Community referrals</li>
+            <li>Warm refreshments</li>
+          </ul>
+        </article>
+
+        <article class="activity-card" data-kind="upcoming">
+          <header>
+            <div>
+              <span class="badge">Upcoming</span>
+              <h3>Winter Warmth Appeal</h3>
+            </div>
+            <strong>Next Month</strong>
+          </header>
+          <p>Collect coats, blankets, and heat packs for vulnerable households before temperatures drop.</p>
+          <ul>
+            <li>Public donation drive</li>
+            <li>Sorting weekend</li>
+            <li>Distribution campaign</li>
+          </ul>
+        </article>
+
+        <article class="activity-card" data-kind="upcoming">
+          <header>
+            <div>
+              <span class="badge">Upcoming</span>
+              <h3>Community Harvest Day</h3>
+            </div>
+            <strong>In 3 Weeks</strong>
+          </header>
+          <p>Outdoor community fair with food stalls, local music, and fundraising activities for families.</p>
+          <ul>
+            <li>Family activities</li>
+            <li>Small business stalls</li>
+            <li>Donation matching</li>
+          </ul>
+        </article>
+
+        <article class="activity-card" data-kind="upcoming">
+          <header>
+            <div>
+              <span class="badge">Upcoming</span>
+              <h3>Volunteer Open Evening</h3>
+            </div>
+            <strong>Next Thursday</strong>
+          </header>
+          <p>A relaxed introduction to the charity for new volunteers, with training information and team meetups.</p>
+          <ul>
+            <li>Volunteer onboarding</li>
+            <li>Role matching</li>
+            <li>Q&A with staff</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hope Rise • Activity timetable and updates</p>
+    <p><a href="visitors.html">Visitor information</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
