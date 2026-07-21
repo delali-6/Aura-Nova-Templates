@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative z-50 w-full border-b border-stone-200 bg-[#5C3A21] text-white">
+    <nav className="relative z-50 w-full border-b border-stone-200 bg-[var(--color-primary)] text-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         
         {/* Logo */}
@@ -32,10 +32,10 @@ export default function Navbar() {
           ))}
 
           <Link
-            href="/contact"
+            href={siteConfig.navigationCta.href}
             className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-stone-800 transition hover:bg-amber-100"
           >
-            Visit Us
+            {siteConfig.navigationCta.label}
           </Link>
         </div>
 

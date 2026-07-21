@@ -2,10 +2,12 @@
 
 import { FormEvent, useState } from "react";
 import { siteConfig } from "@/config/site";
+import PageHero from "@/components/PageHero";
 
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const contactPage = siteConfig.pages.contact;
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -14,39 +16,13 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="bg-[#F8F3ED]">
-
-      {/* Hero */}
-      <section className="relative flex min-h-[55vh] items-center justify-center overflow-hidden bg-stone-900">
-
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000&auto=format&fit=crop')",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        {/* <Navbar /> */}
-
-        <div className="relative z-10 px-6 text-center text-white">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
-            Get in touch
-          </p>
-
-          <h1 className="font-serif text-5xl font-bold md:text-7xl">
-            Come say hello.
-          </h1>
-
-          <p className="mx-auto mt-6 max-w-xl text-lg text-white/80">
-            Questions, bookings, events, or just want to say hi? We would
-            love to hear from you.
-          </p>
-        </div>
-
-      </section>
+    <main className="bg-[var(--color-background)]">
+      <PageHero
+        eyebrow={contactPage.hero.eyebrow}
+        title={contactPage.hero.title}
+        description={contactPage.hero.description}
+        image={contactPage.hero.image}
+      />
 
       {/* Contact Content */}
       <section className="px-6 py-24 lg:px-10">
@@ -55,11 +31,11 @@ export default function ContactPage() {
           {/* Information */}
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-700">
-              Visit us
+              {contactPage.details.eyebrow}
             </p>
 
             <h2 className="font-serif text-4xl font-bold text-stone-800 md:text-5xl">
-              We would love to hear from you.
+              {contactPage.details.title}
             </h2>
 
             <div className="mt-10 space-y-6">
@@ -92,12 +68,11 @@ export default function ContactPage() {
                 </div>
 
                 <h3 className="mt-5 font-serif text-3xl font-bold text-stone-800">
-                  Message sent!
+                  {contactPage.form.success.title}
                 </h3>
 
                 <p className="mt-4 max-w-sm text-stone-500">
-                  Thank you for getting in touch. We will get back to you
-                  as soon as possible.
+                  {contactPage.form.success.description}
                 </p>
               </div>
             ) : (
@@ -110,7 +85,7 @@ export default function ContactPage() {
                     htmlFor="name"
                     className="mb-2 block text-sm font-semibold text-stone-700"
                   >
-                    Your name
+                    {contactPage.form.labels.name}
                   </label>
 
                   <input
@@ -118,7 +93,7 @@ export default function ContactPage() {
                     type="text"
                     required
                     className="w-full rounded-xl border border-stone-200 px-4 py-3 outline-none transition focus:border-amber-700"
-                    placeholder="Your name"
+                    placeholder={contactPage.form.placeholders.name}
                   />
                 </div>
 
@@ -127,7 +102,7 @@ export default function ContactPage() {
                     htmlFor="email"
                     className="mb-2 block text-sm font-semibold text-stone-700"
                   >
-                    Email address
+                    {contactPage.form.labels.email}
                   </label>
 
                   <input
@@ -135,7 +110,7 @@ export default function ContactPage() {
                     type="email"
                     required
                     className="w-full rounded-xl border border-stone-200 px-4 py-3 outline-none transition focus:border-amber-700"
-                    placeholder="you@example.com"
+                    placeholder={contactPage.form.placeholders.email}
                   />
                 </div>
 
@@ -144,7 +119,7 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="mb-2 block text-sm font-semibold text-stone-700"
                   >
-                    Message
+                    {contactPage.form.labels.message}
                   </label>
 
                   <textarea
@@ -152,15 +127,15 @@ export default function ContactPage() {
                     required
                     rows={6}
                     className="w-full resize-none rounded-xl border border-stone-200 px-4 py-3 outline-none transition focus:border-amber-700"
-                    placeholder="How can we help?"
+                    placeholder={contactPage.form.placeholders.message}
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full rounded-full bg-[#5C3A21] px-6 py-3.5 font-semibold text-white transition hover:bg-[#432916]"
+                  className="w-full rounded-full bg-[var(--color-primary)] px-6 py-3.5 font-semibold text-white transition hover:bg-[var(--color-primary-dark)]"
                 >
-                  Send Message
+                  {contactPage.form.labels.submit}
                 </button>
               </form>
             )}
@@ -169,9 +144,6 @@ export default function ContactPage() {
 
         </div>
       </section>
-
-     
-
     </main>
   );
 }

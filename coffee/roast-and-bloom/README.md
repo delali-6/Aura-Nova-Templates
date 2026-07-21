@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roast and Bloom Template (Reusable Coffee Shop Website)
 
-## Getting Started
+This project is a reusable coffee shop website template built with Next.js App Router.
 
-First, run the development server:
+The key idea is simple: most customization is done in two files.
+
+- `config/site.ts` for brand, theme colors, hero content, section copy, contact details, opening hours, and page-level text.
+- `data/menu.ts` for menu items and categories.
+
+## Run Locally
+
+From this folder:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quick Rebrand For A New Coffee Shop
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Duplicate the `roast-and-bloom` folder to a new name.
+2. Update `config/site.ts`:
+	- `name`, `tagline`, `description`, `location`
+	- `theme` colors
+	- `navigation` and `navigationCta`
+	- `contact` and `openingHours`
+	- `homeHero`, `homeSections`, and `pages` copy
+3. Update `data/menu.ts` with that shop's items.
+4. Replace images in `public/images/*` and update matching paths in `config/site.ts`.
 
-## Learn More
+## Reusable Content Model
 
-To learn more about Next.js, take a look at the following resources:
+The following are now config-driven and reusable across shops:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Home hero (title, subtitle, image, action buttons)
+- Featured menu heading text
+- Home about section copy and badge
+- Gallery heading and image list
+- Testimonials block
+- Visit/contact teaser block
+- Full About page (hero, story, values, CTA)
+- Full Menu page hero
+- Full Contact page hero + form text
+- Navbar CTA button
+- Footer brand text and opening hours
+- Global metadata (title/description)
+- Theme colors via CSS variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Lint currently shows `next/no-img-element` warnings for image tags in UI components.
+- You can migrate to `next/image` later if you want automatic image optimization.

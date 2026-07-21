@@ -3,7 +3,7 @@ export type MenuItem = {
   name: string;
   description: string;
   price: string;
-  category: "Coffee" | "Pastries" | "Brunch";
+  category: string;
   image: string;
   featured?: boolean;
 };
@@ -16,7 +16,7 @@ export const menuItems: MenuItem[] = [
     price: "£3.50",
     category: "Coffee",
     image:
-      "https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=1000&auto=format&fit=crop",
+      "/images/menu/cappuccino.jpg",
     featured: true,
   },
 
@@ -27,7 +27,7 @@ export const menuItems: MenuItem[] = [
     price: "£3.20",
     category: "Pastries",
     image:
-      "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000&auto=format&fit=crop",
+      "/images/menu/almond-croissant.jpg",
     featured: true,
   },
 
@@ -37,8 +37,7 @@ export const menuItems: MenuItem[] = [
     description: "Smashed avocado, sourdough bread, chilli flakes and fresh herbs.",
     price: "£8.95",
     category: "Brunch",
-    image:
-      "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/menu/avocado-toast.jpg",
     featured: true,
   },
 
@@ -48,8 +47,7 @@ export const menuItems: MenuItem[] = [
     description: "Smooth espresso, chilled milk and plenty of ice.",
     price: "£4.00",
     category: "Coffee",
-    image:
-      "https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/menu/iced-latte.jpg",
   },
 
   {
@@ -58,7 +56,6 @@ export const menuItems: MenuItem[] = [
     description: "Fluffy pancakes served with seasonal berries and maple syrup.",
     price: "£9.50",
     category: "Brunch",
-    image:
-      "https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/menu/berry-pancakes.jpg",
   },
 ];

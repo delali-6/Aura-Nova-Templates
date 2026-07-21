@@ -4,4 +4,11 @@
   --color-accent: #f3d39b;
   --color-background: #f8f3ed;
   --color-text: #292524;
+  --color-muted: #78716c;
+  --color-surface: #ffffff;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
 }

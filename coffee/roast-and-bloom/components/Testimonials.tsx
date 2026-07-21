@@ -1,43 +1,26 @@
-const testimonials = [
-  {
-    quote:
-      "The perfect place for a quiet morning coffee. The atmosphere is beautiful and the cappuccino is incredible.",
-    name: "Emily R.",
-    role: "Regular customer",
-  },
-  {
-    quote:
-      "I absolutely love coming here for brunch. The food is delicious, the staff are lovely, and it feels so welcoming.",
-    name: "James T.",
-    role: "Local customer",
-  },
-  {
-    quote:
-      "One of the best independent cafés around. You can tell how much care goes into everything they do.",
-    name: "Sophie M.",
-    role: "Coffee enthusiast",
-  },
-];
+import { siteConfig } from "@/config/site";
 
 export default function Testimonials() {
+  const section = siteConfig.homeSections.testimonials;
+
   return (
-    <section className="bg-[#5C3A21] px-6 py-24 text-white lg:px-10">
+    <section className="bg-[var(--color-primary)] px-6 py-24 text-white lg:px-10">
       <div className="mx-auto max-w-7xl">
 
         {/* Heading */}
         <div className="mb-14 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">
-            Kind words
+            {section.eyebrow}
           </p>
 
           <h2 className="font-serif text-4xl font-bold md:text-5xl">
-            Loved by our community
+            {section.title}
           </h2>
         </div>
 
         {/* Testimonials */}
         <div className="grid gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
+          {section.items.map((testimonial, index) => (
             <article
               key={index}
               className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm"

@@ -18,8 +18,7 @@ export default function Footer() {
             </Link>
 
             <p className="mt-5 max-w-xs leading-7 text-white/60">
-              A warm place for great coffee, delicious food, and meaningful
-              moments.
+              {siteConfig.description}
             </p>
           </div>
 
@@ -49,10 +48,11 @@ export default function Footer() {
             </h3>
 
             <div className="mt-5 space-y-3 text-sm text-white/60">
-              <p>Mon – Thu: 7:30 AM – 5:00 PM</p>
-              <p>Friday: 7:30 AM – 6:00 PM</p>
-              <p>Saturday: 8:00 AM – 6:00 PM</p>
-              <p>Sunday: 8:00 AM – 4:00 PM</p>
+              {siteConfig.openingHours.map((entry) => (
+                <p key={entry.day}>
+                  {entry.day}: {entry.hours}
+                </p>
+              ))}
             </div>
           </div>
 

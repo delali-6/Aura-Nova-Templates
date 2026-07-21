@@ -1,6 +1,8 @@
 import { siteConfig } from "@/config/site";
 
 export default function VisitSection() {
+  const section = siteConfig.homeSections.visit;
+
   return (
     <section className="bg-white px-6 py-24 lg:px-10">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
@@ -8,16 +10,15 @@ export default function VisitSection() {
         {/* Location */}
         <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-700">
-            Come and see us
+              {section.eyebrow}
           </p>
 
           <h2 className="font-serif text-4xl font-bold text-stone-800 md:text-5xl">
-            Your table is waiting.
+              {section.title}
           </h2>
 
           <p className="mt-6 max-w-lg leading-8 text-stone-500">
-            Whether you are joining us for your morning coffee, a relaxed
-            brunch, or an afternoon catch-up, we would love to welcome you.
+              {section.description}
           </p>
 
           <div className="mt-8 space-y-4 text-stone-600">
@@ -42,19 +43,19 @@ export default function VisitSection() {
         </div>
 
         {/* Opening Hours */}
-        <div className="rounded-3xl bg-[#F8F3ED] p-8 md:p-12">
+        <div className="rounded-3xl bg-[var(--color-background)] p-8 md:p-12">
           <h3 className="font-serif text-3xl font-bold text-stone-800">
             Opening Hours
           </h3>
 
           <div className="mt-8 space-y-5">
-            <OpeningHour day="Monday" hours={siteConfig.openingHours.monday} />
-            <OpeningHour day="Tuesday" hours={siteConfig.openingHours.tuesday} />
-            <OpeningHour day="Wednesday" hours={siteConfig.openingHours.wednesday} />
-            <OpeningHour day="Thursday" hours={siteConfig.openingHours.thursday} />
-            <OpeningHour day="Friday" hours={siteConfig.openingHours.friday} />
-            <OpeningHour day="Saturday" hours={siteConfig.openingHours.saturday} />
-            <OpeningHour day="Sunday" hours={siteConfig.openingHours.sunday} />
+            {siteConfig.openingHours.map((entry) => (
+              <OpeningHour
+                key={entry.day}
+                day={entry.day}
+                hours={entry.hours}
+              />
+            ))}
           </div>
         </div>
 
